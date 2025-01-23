@@ -41,9 +41,11 @@
         /* Adicionando estilo para a imagem */
         .image-container {
             margin-bottom: 20px;
+            max-width: 100%;
+            overflow: hidden;
         }
         .image-container img {
-            max-width: 100%;
+            width: 100%;
             height: auto;
             border-radius: 10px;
         }
@@ -53,17 +55,7 @@
 
     <!-- Imagem no topo -->
     <div class="image-container">
-        <img
-            srcset="
-                amor-320w.jpg 320w,
-                amor-480w.jpg 480w,
-                amor-800w.jpg 800w
-            "
-            sizes="(max-width: 320px) 280px,
-                   (max-width: 480px) 440px,
-                   800px"
-            src="amor.jpg"
-            alt="meu amor"
+        <img src="imagens/amor.jpg" alt="meu amor"
         />
     </div>
 
